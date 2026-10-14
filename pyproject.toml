@@ -1,0 +1,39 @@
+[project]
+name = "lalia"
+version = "0.1.0"
+description = "Λαλιά: offline push-to-talk dictation for Windows 11 (Whisper large-v3-turbo, Greek first)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "faster-whisper>=1.1",
+    "numpy",
+    "sounddevice",
+    "pystray",
+    "pillow",
+    "rapidfuzz",
+]
+
+[project.optional-dependencies]
+# NVIDIA GPUs: the CUDA 12 cuBLAS and cuDNN 9 DLLs that CTranslate2 needs, as wheels,
+# so no CUDA Toolkit install is required. Lalia adds their bin folders to the DLL path.
+gpu = [
+    "nvidia-cublas-cu12",
+    "nvidia-cudnn-cu12==9.*",
+]
+dev = ["pytest"]
+
+[project.gui-scripts]
+lalia = "lalia.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["lalia"]
+
+[tool.setuptools.package-data]
+lalia = ["data/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

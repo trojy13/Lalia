@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+# Test recordings made by tools/make_greek_sample.ps1
+samples/
+# Copies of the folder made for other PCs
+*.zip

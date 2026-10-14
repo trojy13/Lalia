@@ -1,0 +1,33 @@
+{
+  "_comment": "Test sentences for mixed Greek/English and pharmacy vocabulary. 'parts' are spoken in order by the Greek (el) or English (en) voice; brand names are written the way a Greek pharmacist says them, 'terms' are the spellings expected in the transcript. No real patient data.",
+  "sentences": [
+    {"id": "drugs1", "parts": [["el", "Ο ασθενής παίρνει Ντεπόν πεντακόσια τρεις φορές την ημέρα και Νέξιουμ σαράντα το πρωί."]],
+     "terms": ["Depon", "Nexium"]},
+    {"id": "drugs2", "parts": [["el", "Χρειάζομαι δύο κουτιά Ογκμεντίν του ενός γραμμαρίου και ένα Πόνσταν φόρτε."]],
+     "terms": ["Augmentin", "Ponstan"]},
+    {"id": "drugs3", "parts": [["el", "Η γιατρός έγραψε Ξαρέλτο είκοσι και Κόνκορ πέντε για την υπέρταση."]],
+     "terms": ["Xarelto", "Concor", "υπέρταση"]},
+    {"id": "drugs4", "parts": [["el", "Δώστε του Βεντολίν για το άσθμα και Αέριους σιρόπι για την αλλεργία."]],
+     "terms": ["Ventolin", "Aerius", "άσθμα", "αλλεργία"]},
+    {"id": "drugs5", "parts": [["el", "Ελέγξτε αν έχουμε απόθεμα Γλουκοφάζ οκτακόσια πενήντα και Ευθυρόξ εκατό."]],
+     "terms": ["Glucophage", "Euthyrox"]},
+    {"id": "drugs6", "parts": [["el", "Πάρτε ένα Λίπιτορ και ένα Πλάβιξ, και για τον πόνο Μπρούφεν ή Βολταρέν."]],
+     "terms": ["Lipitor", "Plavix", "Brufen", "Voltaren"]},
+    {"id": "inn1", "parts": [["el", "Η δραστική ουσία είναι αμοξικιλλίνη με κλαβουλανικό οξύ, και η εναλλακτική είναι η αζιθρομυκίνη."]],
+     "terms": ["αμοξικιλλίνη", "κλαβουλανικό", "αζιθρομυκίνη"]},
+    {"id": "inn2", "parts": [["el", "Για τη χοληστερίνη παίρνει ατορβαστατίνη, και για τον διαβήτη μετφορμίνη και ινσουλίνη."]],
+     "terms": ["χοληστερίνη", "ατορβαστατίνη", "μετφορμίνη", "ινσουλίνη"]},
+    {"id": "switch1", "parts": [["el", "Καλημέρα, ο πελάτης ρωτάει"], ["en", "if we have the new flu vaccine in stock"], ["el", "και θέλει να το κλείσει για αύριο."]],
+     "terms": ["flu vaccine", "stock", "αύριο"]},
+    {"id": "switch2", "parts": [["en", "Please send the order to the supplier"], ["el", "και πείτε τους ότι το χρειαζόμαστε μέχρι την Παρασκευή."]],
+     "terms": ["order", "supplier", "Παρασκευή"]},
+    {"id": "plain1", "parts": [["el", "Το αέριο της κουζίνας τελείωσε και ο κόκορας λαλούσε όλο το πρωί."]],
+     "terms": ["αέριο", "κόκορας"], "forbid": ["Aerius", "Concor"]},
+    {"id": "plain2", "parts": [["el", "Θα περάσω από την τράπεζα και μετά θα πάω για καφέ με τη Μαρία."]],
+     "terms": ["τράπεζα", "καφέ", "Μαρία"]},
+    {"id": "plain3", "parts": [["el", "Καλημέρα σας. Η συνταγή περιλαμβάνει δύο κουτιά αμοξικιλλίνη και ένα σιρόπι για τον βήχα. Παρακαλώ ελέγξτε τη διαθεσιμότητα στην αποθήκη."]],
+     "terms": ["αμοξικιλλίνη", "σιρόπι", "βήχα", "διαθεσιμότητα"]},
+    {"id": "plain4", "parts": [["en", "Please check the order and call me back tomorrow, we also need a concert ticket."]],
+     "terms": ["order", "tomorrow", "concert"], "forbid": ["Concor"]}
+  ]
+}
